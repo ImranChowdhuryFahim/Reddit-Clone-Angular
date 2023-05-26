@@ -16,6 +16,8 @@ import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit
 import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TockenInterceptorService } from './tocken-interceptor.service';
+import { UserProfileComponent } from './auth/user-profile/user-profile.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { TockenInterceptorService } from './tocken-interceptor.service';
     PostTitleComponent,
     SubredditSideBarComponent,
     VoteButtonComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { TockenInterceptorService } from './tocken-interceptor.service';
     HttpClientModule,
     ToastrModule.forRoot(),
     FontAwesomeModule,
+    NgbModule,
   ],
   providers: [
     {
