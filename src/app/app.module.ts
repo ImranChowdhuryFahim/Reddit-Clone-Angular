@@ -18,7 +18,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TockenInterceptorService } from './tocken-interceptor.service';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { CreateSubredditComponent } from './subreddit/create-subreddit/create-subreddit.component';
+import { ListSubredditComponent } from './subreddit/list-subreddit/list-subreddit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SubredditSideBarComponent,
     VoteButtonComponent,
     UserProfileComponent,
+    CreateSubredditComponent,
+    ListSubredditComponent,
   ],
   imports: [
     BrowserModule,
