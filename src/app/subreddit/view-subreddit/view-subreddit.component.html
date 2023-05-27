@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <hr />
+      <div class="col-md-9">
+        
+        <div>
+            Welcome to <b>{{subreddit.name}}</b>.<br /> This subreddit has <b>{{subreddit.numberOfPosts}}</b> posts in total;
+            You can check all the posts below.
+          </div>
+          <hr />
+        <div>List of Posts</div>
+        
+        <app-post-title [posts]="posts"></app-post-title>
+      </div>
+    </div>
+  </div>
